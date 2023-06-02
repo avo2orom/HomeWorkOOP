@@ -1,8 +1,6 @@
 package HW3;
 
 import HW3.classes.*;
-import HW3.classes.Figure;
-import HW3.classes.Polygon;
 
 import java.io.PrintWriter;
 import java.util.Scanner;
@@ -18,10 +16,10 @@ public class ConsoleMenu {
         mainDB.addFigure(new Square(Math.random()*100.0));
         mainDB.addFigure(new Rectangle(Math.random()*100.0,Math.random()*100.0));
         Double rnd = Math.random()*100.0;
-        mainDB.addFigure(new Triangle((rnd,rnd,rnd));
+        mainDB.addFigure(new Triangle((rnd),rnd,rnd));
     }
 
-    private Collection mainDB = new Collection();
+    private final Collection mainDB = new Collection();
     private PrintWriter pw = new PrintWriter(System.out, true);
     private Scanner scan = new Scanner(System.in);
 

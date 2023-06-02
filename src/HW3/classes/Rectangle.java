@@ -1,6 +1,5 @@
 package HW3.classes;
 
-public class Rectangle {
     public class Rectangle extends Polygon {
         /**
          * Инициализация класса "Прямоугольник"
@@ -33,4 +32,4 @@ public class Rectangle {
             return getlSides()[0] * getlSides()[1];
         }
     }
-}
+
